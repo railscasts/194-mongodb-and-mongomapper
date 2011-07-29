@@ -1,0 +1,21 @@
+Railscasts Episode #194: MongoMapper Basics
+
+http://railscasts.com/episodes/194
+
+Commands
+
+  rails todo
+  cd todo
+  mate .
+  sudo rake gems:install
+  script/generate nifty_layout
+  script/generate nifty_scaffold project name:string --skip-migration
+  script/generate nifty_scaffold task project_id:string name:string completed:boolean --skip-migration
+
+script/console
+
+  Project.all
+  Project.all(:order => "name")
+  Project.all(:priority => 3)
+  Project.all(:priority.gte => 2)
+  Project.all(:priority.in => [2, 3])
